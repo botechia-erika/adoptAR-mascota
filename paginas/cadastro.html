@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Jost:ital,wght@0,100;0,300;0,500;0,800;0,900;1,100;1,200;1,400;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Fredoka+One&family=Jost:ital,wght@0,100;0,300;0,500;0,800;0,900;1,100;1,200;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+    <title>Cadastro</title>
+</head>
+
+<body>
+  <header>
+  <nav class="menu">
+    <label><img src="img/logo/logo02.svg" alt="logo libretaPET" class="logoBrand"></label>
+    <ul class="menu__item ">
+      <li class="item"><a href="#" class="link-item">Home</a></li>
+      <li class="item"><a href="info.html" class="link-item">Info</a></li>
+      <li class="item"><a href="salud.html" class="link-item">salud</a></li>
+      <li class="item"><a href="proyecto.html" class="link-item">Proyecto</a></li>
+      <li class="item"><a href="adoptar.html" class="link-item">Adoptar</a></li>
+      <li class="item"><a href="home.html#contacto" class="link-item">Contacto</a></li>
+      <li class="item"><a href="snakeGame.html" class="link-item">snakeGame</a></li>
+
+    </ul>
+
+    <buton class="btn__menu" id="buttonMenu">
+      <i class="fa fa-bars"></i>
+    </buton>
+  </nav>
+
+
+
+      <h1 class="header__h1">LibretaCLUB!</h1>
+   
+
+
+    </header>
+    <div class="container__body">
+    <main class="main__container">
+
+      <section class="section__container">
+        <div id="myApp">
+            <form action="./cadastro-concluido.html" method="GET">
+                <label for="primerNombre_Usuario">Nombre de Pila: </label>
+                <input type="text" for="realUser" id="primerNombre_Usuario" placeholder="Pepe Suarez">
+                <!-- FOR = ES PARA -- label es para este input -->
+
+                <label for="apellido_Usuario">Apellido </label>
+                <input type="text" name="apellido_Usuario" id="apellido_Usuario">
+
+                <!-- NUMBER -->
+
+                <label for="edadUsuario"> Ingrese su EDAD</label>
+                <input type="number" name="edadUser" id="edadUser" min="18" max="120" maxlength="3" value="18">
+
+
+                <!-- EMAIL -->
+                <p>
+                    <label for="emailUser">E-mail</label>
+                    <input type="email" name="emailUser" id="emailUser" minlength="9" maxlength="250"
+                        pattern=".+@.+\.com">
+
+
+                </p>
+                <!-- fecha -->
+
+                <label class="dateBirth">Fecha Cumple </label>
+                <input type="date" name="dateBirth" id="dateBirth">
+
+
+                <!-- PASSWORD -->
+                <p>
+                    <label for="passwordUser">Contrasena</label>
+                    <input type="password" name="passwordUser"
+                        pattern="[(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$]"
+                        id="passwordUser" minlength="5" maxlength="8" size="8" required="">
+                </p>
+                <!-- size = tamano visual minlenght=numero minimo de caracteres maxlenght = numero maximo caracteres -->
+                <!-- pattern usa expresiones regulares tipo de conjunto de caracteres que acepta -->
+
+                <!-- file -->
+                <!-- <label>Archivo
+    <input type="file" name="fileUser" id="fileUser">
+    </label> -->
+                <label>COLOR PICKER
+                    <input type="color" name="colorForUser" id="colorForUser">
+
+                </label>
+
+                <fieldset>
+                    <legend>CHECK SELECT</legend>
+                    <label for="opt1">
+
+                        <input type="checkbox" name="opt1" value="check01"> CHECK #01
+                    </label>
+                    <label for="opt1">
+                        <input type="checkbox" name="opt1" value="check02"> CHECK #02
+                    </label>
+                    <label for="opt1">
+                        <input type="checkbox" name="opt1" value="check03"> CHECK #03
+
+                    </label>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>CHECK OPTIONS</legend>
+                    <label for="opt1">
+                        <input type="checkbox" name="opt1" value="check01"> CHECK #01
+                    </label>
+                    <label for="opt1">
+                        <input type="checkbox" name="opt1" value="check02"> CHECK #02
+                    </label>
+                    <label for="opt1">
+                        <input type="checkbox" name="opt1" value="check03"> CHECK #03
+                    </label>
+                </fieldset>
+                <button type="submit">Enviar datos</button>
+
+            </form>
+        </div>
+    </section>
+    <aside>
+        <div class="temaPagina">
+            <a href="temaPagina01.html">
+                <img class="iconTemas" src="img/logo00.svg"/>
+                <div class="temaPagina-div">
+                    <p class="temaPagina-name">mascota</p>
+                    <p class="temaPagina-slogan">banner</p>
+                </div>
+            </a>
+        </div>
+       <div class="temaPagina">
+            <a href="temaPagina01.html">
+                <img class="iconTemas" src="img/logo00.svg"/>
+                <div class="temaPagina-div">
+                    <p class="temaPagina-name">mascota</p>
+                    <p class="temaPagina-slogan">banner</p>
+                </div>
+            </a>
+        </div>
+        <div class="temaPagina">
+            <a href="temaPagina01.html">
+                <img class="iconTemas" src="img/logo00.svg"/>
+                <div class="temaPagina-div">
+                    <p class="temaPagina-name">mascota</p>
+                    <p class="temaPagina-slogan">banner</p>
+                </div>
+            </a>
+            <div class="temaPagina">
+                <a href="temaPagina01.html">
+                    <img class="iconTemas" src="img/logo00.svg"/>
+                    <div class="temaPagina-div">
+                        <p class="temaPagina-name">mascota</p>
+                        <p class="temaPagina-slogan">banner</p>
+                    </div>
+                </a>
+            </div>
+            <div class="temaPagina">
+                <a href="temaPagina01.html">
+                    <img class="iconTemas" src="img/logo00.svg"/>
+                    <div class="temaPagina-div">
+                        <p class="temaPagina-name">mascota</p>
+                        <p class="temaPagina-slogan">banner</p>
+                    </div>
+                </a>
+            </div> 
+        </div>
+    </aside>
+
+    </main>
+    <footer>
+
+      <ul class="social-icons-list">
+        <li>
+          <a href="#title" class="social-link"><i class="fa-solid fa-arrow-up"></i></a>
+        </li>
+        <li>
+          <a href="https://github.com/grupo-05-adoptAR" class="social-link" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </li>
+        <li>
+          <a href="mailto:mendoncabotechia@proton.me" class="social-link"><i class="fab fa-google-plus-g"></i></a>
+        </li>
+      </ul>
+    
+    </footer>
+    
+
+
+  <script src="js/navbar.js"></script>
+  <script src="js/formValidacion.js"></script>
+
+</body>
+
+</html>
